@@ -45,7 +45,7 @@ a {
     /* border-radius:4px;
     border:1px solid #bbb; */
     transition: all 0.3s linear;
-    background-color: rgb(240, 240, 240);
+    background-color: #335264;
 }
 
 @media only screen and (max-width: 800px) {
