@@ -1,6 +1,9 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;   
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 100;   
 }
 
     /* НАВІГАЦІЯ */
@@ -189,17 +192,19 @@ h2 {
 footer {
     text-align: center;
     margin: 0;
+    background-color: rgb(248, 248, 248);
 }
 
-footer p {
+.contacty {
+    display: flex;
+    list-style: none;
+    font-size: 1.1em;
     margin: 0;
-    padding: 5px;
-    font-family: cursive;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
 
-#logo {
-    width: 300px;
-}
 
 @media only screen and (max-width: 1200px) {
     .grid-wrapper2 {

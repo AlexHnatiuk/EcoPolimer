@@ -1,3 +1,55 @@
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+}
+    
+    /* НАВІГАЦІЯ */
+
+    .main-nav {
+        display: flex;
+        list-style: none;
+        font-size: 0.7em;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    #eco {
+        width: 200px;
+    }
+    
+    .push {
+        margin-left: auto;
+        background-color: gainsboro;
+        border-radius: 10px;
+    }
+    
+    li {
+        padding: 10px 30px;
+    }
+    
+    a {
+        color: #e27217;
+        text-decoration: none;    
+    }
+    
+    .navbar {
+        font-size:2em;
+        transition: all 0.3s linear;
+        background-color: white;
+    }
+
 h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 32pt;
