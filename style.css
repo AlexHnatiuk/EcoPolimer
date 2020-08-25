@@ -131,7 +131,7 @@ li a:hover {
     /* SENDWICH MENU */
     
 label {
-    margin: 0 40px 0 0;
+    margin: 0 30px 0 0;
     font-size: 26px;
     line-height: 70px;
     color: coral;
@@ -414,6 +414,7 @@ footer {
             display: block;
             border-bottom: 1px solid #eaeaeb;
             margin: 0;
+            background-color: white;
         }
         #toggle:checked + .menu {
             display: block;
