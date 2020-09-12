@@ -17,135 +17,43 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-#logo {
-    display: grid;
+    
+#eco {
     width: 200px;
-    height: 70px;
-    align-content: center;
-    padding-left: 20px;
 }
-
-#logo img {
-    width: 100%;
-}
-
-#logo p {
-    font-size: 0.87em;
-    margin: 0;
-}
-
-
+    
 .push {
     margin-left: auto;
-    /* background-color: gainsboro; */
-    border-radius: 10px;
 }
-
+    
 li {
     padding: 10px 30px;
 }
 
+li p {
+    margin: 0;
+    color: gray;
+    font-size: 0.7em;
+}
+    
 a {
-    color: #e27217;
+    color: gray;
     text-decoration: none;    
 }
 
-li a:hover {
+.main-nav a:hover {
     color: blue;
 }
-
+    
 .navbar {
     font-size:2em;
     transition: all 0.3s linear;
     background-color: white;
 }
-
-    /* DROPDOWN MENU */
-
-    .dropbtn {
-        background-color: white;
-        color: #e27217;
-        /* padding: 16px; */
-        font-size: 1.1em;
-        border: none;
-        font-family: 'Raleway', sans-serif;
-        font-style: normal;
-        font-weight: 100;
-      }
-      
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      
-      .dropdown-content {        
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 250px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        left: 50%;
-        right: auto;
-        transform: translateX(-50%);
-      }
-
-      .dropdown-content2 {
-        display: none;
-        position: absolute;
-        font-size: 0.8em;
-        background-color: #f1f1f1;
-        min-width: 350px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        right: 50%;
-        right: auto;
-        transform: translateX(-75%);
-        
-      }
-      
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-      
-      .dropdown-content a:hover {background-color: #ddd;}
-
-      .dropdown-content2 p:hover {
-          color: blue;          
-        }
-      
-      .dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content2 {display: block;}
-      
-      .dropdown:hover .dropbtn {color: blue;}
-
-    /* SENDWICH MENU */
     
-label {
-    margin: 0 30px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    color: coral;
-    display: none;
-}
-
-#toggle {
-    display: none;
-}
-    
-      /* ВИДИ ПАКЕТІВ */
+    /* ВИДИ ПАКЕТІВ */
 
 .container {    
-    margin-top: 100px;
     margin-right:10%;
     margin-left: 10%;
 }
@@ -184,7 +92,7 @@ button:focus {
 }
 
 h3 {
-    font-size: 2.2em;
+    font-size: 1.5em;
     text-align: center;
     color: #335264;
     margin-bottom: 1rem;
@@ -212,13 +120,6 @@ h1 {
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
-
-/* .grid:hover {
-    -webkit-transform: rotate(-7deg);
-    -moz-transform: rotate(-7deg);
-    -o-transform: rotate(-7deg);
-    transform: rotate(-7deg);
-} */
 
 /* LIST */
 
@@ -300,26 +201,35 @@ h1 {
 /* FOOTER */
 
 .contacty {
-    display: flex;
+    display: contents;
     list-style: none;
     font-size: 1.1em;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
 }
 
-#last {
-    font-size: 2.2em;
-    text-align: center;
-    color: #335264;
-    margin-bottom: 1rem;
-    font-weight: 400;
+.contacty li {
+    padding: 5px;
+    color: honeydew;
 }
 
 footer {
-    background-color: rgb(248, 248, 248);
+    width: 100%;
+    height: 500px;
+    background-image: url(img/city2.jpg);
+    background-size: 100% 100%;
 }
+
+footer h3 {
+    padding-top: 360px;
+    color: honeydew;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1285px) {
+    footer {
+        background-size: cover;
+    }
+}
+
 
 @media only screen and (max-width: 1050px) {
     li {
@@ -334,96 +244,36 @@ footer {
     li {
         padding: 10px 20px;
     }
-    .dropbtn, .main-nav a {
+    .main-nav a {
         font-size: 0.9em;
-    }    
+    }      
 }
 
-@media only screen and (max-width: 850px) {
-    /* .main-nav {
+@media only screen and (max-width: 795px) {
+    .main-nav {
         font-size: 0.6em;
         padding: 0;
-    } */
-    /* li {
-        padding: 10px 15px;
-    }  */
-}
-    @media only screen and (max-width: 680px) {
-        .main-nav {
-            font-size: 0.6em;
-            padding: 0;
-        }
-        li {
-            padding: 10px 10px;
-        }
-        #logo {
-            width: 150px;
-        }
-        #logo p {
-            font-size: 0.65em;
-        }
     }
+    li {
+        padding: 10px 10px;
+    }
+    #eco{
+        width: 150px;
+    }
+    #logo p {
+        font-size: 0.65em;
+    }
+} 
+    
 
-
-    label {
+@media only screen and (max-width: 600px) {
+    .main-nav {
         display: block;
-        cursor: pointer;
     }
-    .nav{
-        border-bottom: 1px solid #eaeaeb;
-        text-align: right;
-        height: 70px;
-        line-height: 70px;
+    .main-nav li {
+        border-bottom: 1px solid rgb(179, 179, 187);
     }
-    .menu {
-        margin: 0 30px 0 0;
-    }
-
-    .menu a {
-        font-size: 1.2em;
-        clear: right;
-        text-decoration: none;
-        margin: 0 10px;
-        line-height: 70px;        
-    }
-
-    label {
-        margin: 0 40px 0 0;
-        font-size: 26px;
-        line-height: 70px;
-        display: none;
-        width: 26px;
-        float: right;
-    }
-
-    #toggle {
-        display: none;
-    }
-
-    @media only screen and (max-width: 640px) {
-        label {
-            display: block;
-            cursor: pointer;
-        }
-        .menu {
-            text-align: center;
-            width: 100%;
-            display: none;
-        }
-        .menu a {
-            display: block;
-            border-bottom: 1px solid #eaeaeb;
-            margin: 0;
-            background-color: white;
-        }
-        #toggle:checked + .menu {
-            display: block;
-            /* background-color: white; */
-        }        
-        .container {
-            margin-top: 250px
-        }
-    }
+}
 
 
 
