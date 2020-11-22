@@ -6,134 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoPolimer</title>
     <link rel="stylesheet" href="https://use.typekit.net/gqa7qcx.css">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="./style.css">    
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>  
 
-    <!-- Навігація -->       
+    <!-- Navigation -->       
 
     <nav class="navbar">
         <ul class="main-nav">
-            <li>
-                <img id="eco" src="img/eco.png" alt="EcoPolimer">
-                <p>пакети серійні та з логотипом</p>
+            <li class="push">
+                <img id="eco" src="img/eco.png" alt="EcoPolimer">                
             </li>
-            <li class="push"><a href="#nashprod">Наша продукція</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>                
-            <li><a href="#cont">Контакти</a></li>
+            <li class="nav"><a href="product.html">продукція</a></li>
+            <li class="nav"><a href="price.html">про нас</a></li>
+            <li class="nav"><a href="price.html">галерея</a></li>                
+            <li class="nav"><a href="#cont">контакти</a></li>
+            <li id="tel"><a href="#cont">тел: 098 092 36 88</a></li>
         </ul>
     </nav> 
 
+    <!-- Body -->
 
-        <!-- Види пакетів -->
-
-    <div class="container">
-
-        <div><h2 id="nashprod">Наша продукція</h2></div>
+    <div id="container">
         <div class="grid-wrapper">
-            <div class="grid">
-                <a href="banan.html">
-                <h3>Пакет "Банан"</h3>
-                <img class="type" src="img/banan.png" alt="Фото пакету">
-                </a>
+            <div><img src="img/bioPaket.png" alt="Фото пакета"></div>
+            <div id="text-wrapper">
+                <div id="textbox">
+                    <h2 class="text">виробництво</h2>
+                    <h2 class="text">поліетиленових</h2>
+                    <h2 class="text">пакетів</h2>
+                </div>
             </div>
-            <div class="grid">
-                <a href="maika.html">
-                <h3>Пакет "Майка"</h3>
-                <img class="type" src="img/market.png" alt="Фото пакету">
-                </a>                
-            </div>
-            <div class="grid">
-                <h3>Пакет "Фасовка"</h3>
-                <img class="type" src="img/fasovka.jpg" alt="Фото пакету">                
-            </div>
-            <div class="grid">
-                <a href="bio.html">
-                <h3>Пакет "Біо"</h3>
-                <img class="type" src="img/bio.png" alt="Фото пакету">
-                </a>
-            </div>
-            <div class="grid">
-                <h3>Пакет "Майка"</h3>
-                <img class="type" src="img/market.png" alt="Фото пакету">
-            </div>
-            <div class="grid">
-                <h3>Пакет "Фасовка"</h3>
-                <img class="type" src="img/fasovka.jpg" alt="Фото пакету">
-            </div>  
         </div>
-    
-
-        <!-- Інфо -->
-
-        
-        <div><h2 id="per2">Переваги роботи з нами</h2></div>    
-        <div class="grid-container">   
-            <div class="grid-item">
-                <img src="img/vlasne.png" alt="картинка" id="img1">
-                <p class="pervyr">Власне виробництво</p>
-            </div>
-            <div class="grid-item">
-                <img src="img/korotki.png" alt="картинка" id="img2">
-                <p class="pervyr">Короткі строки виконання</p>
-            </div>
-            <div class="grid-item">
-                <img src="img/piat.png" alt="картинка" id="img3">
-                <p class="pervyr">5 років на ринку</p>
-            </div>
-            <div class="grid-item">
-                <img src="img/dostavka.png" alt="картинка" id="img4">
-                <p class="pervyr">Доставка до дверей без переплат</p>
-            </div>
-            <div class="grid-item">
-                <img src="img/garantia.png" alt="картинка" id="img5">
-                <p class="pervyr">Гарантія якості</p>
-            </div>
-            <div class="grid-item">
-                <img src="img/gnuchkist.png" alt="картинка" id="img6">
-                <p class="pervyr">Гнучкість тиражів</p>
-            </div>    
-        </div> 
-
-            <div class="grid-wrapper2">
-                <div class="grid2">
-                    <img src="img/logo1.png" alt="логотип">
-                    <hr class="hr1">
-                    <hr class="hr2">
-                    <hr class="hr3">
-                    <p>Безкоштовні зразки продукції та гнучкі тиражі</p>
-                </div>
-                <div class="grid2">
-                    <img src="img/logo2.png" alt="логотип">
-                    <hr class="hr1">
-                    <hr class="hr2">
-                    <hr class="hr3">
-                    <p>Можливість замовити біорозкладні пакети</p>
-                </div>
-                <div class="grid2">
-                    <img src="img/logo3.png" alt="логотип">
-                    <hr class="hr1">
-                    <hr class="hr2">
-                    <hr class="hr3">
-                    <p>Можливість тестового виробництва (без авансового платежу)</p>
-                </div>
-            </div>
-        
     </div>
-
-    <footer class="footer">
-        <h3 id="cont">Контакти:</h3>   
-        <ul class="contacty">
-            <li>м. Гайсин, Вінницька обл.</li>
-            <li>тел: 098 092 36 88</li>
-            <li>e-mail: ecopolimera@gmail.com</li>
-        </ul>     
-    </footer>   
     
+    
+   
 
 </body>
 </html>
