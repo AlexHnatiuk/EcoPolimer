@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 100;
     text-align: center;
@@ -12,14 +11,14 @@ body {
     /* НАВІГАЦІЯ */
 
 .nav a{
-    color: rgb(57,255,20);
+    color: #0ba42d;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 #tel a{
     color: ivory;
-    background-color: lawngreen;
+    background-color: #0ba42d;
     padding: 10px;
     font-size: 1.2em;
     border-radius: 5px;
@@ -33,7 +32,7 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
-    padding-right: 50px;
+    padding-right: 5%;
 }
     
 #eco {
@@ -67,7 +66,6 @@ a {
 .navbar {
     font-size:1.5em;
     transition: all 0.3s linear;
-    /* background-color: white; */
     padding-top: 15px;
 }
     
@@ -77,24 +75,23 @@ a {
 
 .grid-wrapper {
     display: grid;
-    /* grid-gap: 30px; */
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
 }
 .text{
-    color: rgb(0,255,0);
+    color: #0ba42d;
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
-    font-size: 2em;
+    font-size: 2.5em;
+    margin: 0.2em;
 }
 .grid-wrapper img{
     width: 300px;
-    padding: 10px;
 }
 #container {
     margin-top: 100px;
-    margin-left: 15%;
-    margin-right: 25%;
+    margin-bottom: 100px;
 }
 #textbox{
     border-left: solid 2px lightgray;
@@ -102,6 +99,9 @@ a {
 }
 #text-wrapper {
     align-self: center;
+}
+#image-wrapper {
+    text-align: end;
 }
 
 @media only screen and (max-width: 1130px) {
@@ -122,39 +122,55 @@ a {
     }  
     .main-nav {
         padding-right: 10px;
+    }
+    .push {
+        padding-right: 100px;
     }    
 }
 
+@media only screen and (max-width: 970px) {
+    .push {
+        padding-right: 50px;
+    } 
+}
 
 @media only screen and (max-width: 920px) {
-    .main-nav {
-        font-size: 0.6em;
-        padding: 0;
-    }
+    
     li {
-        padding: 10px 10px;
+        padding: 10px 8px;
     }
     #eco{
-        width: 150px;
-    }
-    #logo p {
-        font-size: 0.65em;
+        width: 180px;
     }
 } 
 
 @media only screen and (max-width: 800px) {
    
-    .grid-wrapper {
-        grid-template-columns: 1fr;
-        grid-gap: 50px;
+    .main-nav {
+        font-size: 0.65em;
     }
     .text {
-        text-align: center;
-        font-size: 1.5em;
+        font-size: 2em;
     }
-    #container {
-        margin-left: 25%;
+    .grid-wrapper img{
+        width: 250px;
     }
+}
+
+@media only screen and (max-width: 740px) {
+    
+    .main-nav {
+        font-size: 0.60em;
+    }
+    #eco{
+        width: 150px;
+    }
+    #tel a {
+        font-size: 1em;
+    }
+    .push {
+        padding-right: 35px;
+    } 
 }
 
 @media only screen and (max-width: 650px) {
@@ -167,12 +183,25 @@ a {
         margin-right: 20%;
     }
     .grid-wrapper img{
-        width: 250px;
-        padding: 1px;
+        width: 100%;
     }
     #container {
         margin-top: 50px;
-        margin-left: 25%;
-        margin-right: 25%;
+    }
+    .grid-wrapper {
+        grid-template-columns: 250px;
+        grid-gap: 50px;
+        justify-content: center;
+    }
+    .push {
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .grid-wrapper {
+        grid-template-columns: 200px;
+    }
+    .text {
+        font-size: 1.5em;
     }
 }
