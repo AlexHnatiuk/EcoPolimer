@@ -1,5 +1,17 @@
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+ }
+
+
 body {
-    margin: 0;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -25,53 +37,42 @@ body {
 .main-nav {
     display: flex;
     list-style: none;
-    font-size: 0.7em;
+    font-size: 2vh;
     margin: 0;
     justify-content: center;
     align-items: center;
     padding-right: 5%;
+    padding-left: 10%;
 }    
 #eco {
-    width: 200px;
+    height: 4vh;
 }    
 .push {
     margin-left: auto;
-    padding-right: 150px;
+    /* padding-right: 150px; */
 }    
 li {
     padding: 10px 20px;
 }
-/* li p {
-    margin: 0;
-    color: gray;
-    font-size: 0.7em;
-}     */
+
 a {
     /* color: gray; */
     text-decoration: none;    
 }
 .main-nav a:hover {
-    color: blue;
-}    
+    color: rgb(14, 102, 6);
+}
+
+#tel a:hover{
+    color: rgb(14, 102, 6);
+    background-color: transparent;
+}
 .navbar {
     font-size:1.5em;
     transition: all 0.3s linear;
-    padding-top: 15px;
+    padding-top: 3vh;
 }
 
-
-/* .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  } */
-  
-  /* .dropdown {
-    position: relative;
-    display: inline-block;
-  } */
   
   .dropdown-content {
     display: none;
@@ -92,13 +93,8 @@ a {
   .dropdown-content a:hover {background-color: #ddd;}
   
   .nav:hover .dropdown-content {display: block;}
-  
-  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
-    
 
-
-
-
+ 
 .grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -109,15 +105,14 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
-    font-size: 2.5em;
+    font-size: 6vh;
     margin: 0.2em;
 }
 .grid-wrapper img{
-    width: 300px;
+    height: 50vh;
 }
 #container {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 15vh;
 }
 #textbox{
     border-left: solid 2px lightgray;
@@ -138,25 +133,25 @@ a {
 
 @media only screen and (max-width: 1090px) {
     .main-nav {
-        font-size: 0.7em;
+        /* font-size: 0.7em; */
     }
     li {
         padding: 10px 20px;
     }
     .main-nav a {
-        font-size: 0.9em;
+        /* font-size: 0.9em; */
     }  
     .main-nav {
         padding-right: 10px;
     }
     .push {
-        padding-right: 100px;
+        /* padding-right: 100px; */
     }    
 }
 
 @media only screen and (max-width: 970px) {
     .push {
-        padding-right: 50px;
+        /* padding-right: 50px; */
     } 
 }
 
@@ -166,42 +161,49 @@ a {
         padding: 10px 8px;
     }
     #eco{
-        width: 180px;
+        /* width: 180px; */
     }
 } 
 
 @media only screen and (max-width: 800px) {
    
     .main-nav {
-        font-size: 0.65em;
+        /* font-size: 0.65em; */
     }
     .text {
-        font-size: 2em;
+        /* font-size: 2em; */
     }
     .grid-wrapper img{
-        width: 250px;
+        /* width: 250px; */
     }
 }
 
 @media only screen and (max-width: 740px) {
     
     .main-nav {
-        font-size: 0.60em;
+        /* font-size: 0.60em; */
     }
     #eco{
-        width: 150px;
+        /* width: 150px; */
     }
     #tel a {
-        font-size: 1em;
+        /* font-size: 1em; */
     }
     .push {
-        padding-right: 35px;
+        /* padding-right: 35px; */
     } 
 }
 
 @media only screen and (max-width: 650px) {
+    #eco{
+        height: 3vh;
+    }
     .main-nav {
         display: block;
+        padding: 0;
+    }
+    #image-wrapper {
+        text-align: center;
     }
     .main-nav li {
         border-bottom: 1px solid rgb(179, 179, 187);
@@ -209,7 +211,7 @@ a {
         margin-right: 20%;
     }
     .grid-wrapper img{
-        width: 100%;
+        /* width: 100%; */
     }
     #container {
         margin-top: 50px;
@@ -220,7 +222,7 @@ a {
         justify-content: center;
     }
     .push {
-        padding-right: 0;
+        /* padding-right: 0; */
     }
 }
 @media only screen and (max-width: 400px) {
@@ -228,6 +230,6 @@ a {
         grid-template-columns: 200px;
     }
     .text {
-        font-size: 1.5em;
+        font-size: 3vh;
     }
 }
