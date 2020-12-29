@@ -68,7 +68,7 @@ li {
 .navbar {
     display: grid;
     grid-template-columns: 1fr auto auto 1fr;
-    grid-template-rows: 10vh 10vh 60vh;
+    grid-template-rows: 10vh 10vh;
     /* font-size:1.5em;
     transition: all 0.3s linear; */
 }
