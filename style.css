@@ -22,45 +22,55 @@ body {
 
     /* НАВІГАЦІЯ */
 
-.nav a{
+#menu a{
     color: #0ba42d;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 2.3vh;
+    padding-left: 6%;
+    padding-bottom: 1.5vh;
+    text-decoration: none;
 }
 
+#menu {
+    justify-content: flex-end;
+    display: inline-flex;
+}
 .main-nav {
-    display: flex;
+    display: inline-flex;
     list-style: none;
-    font-size: 2vh;
     margin: 0;
-    justify-content: center;
-    align-items: center;
-    padding-right: 5%;
-    padding-left: 10%;
-}    
-#eco {
-    height: 4vh;
+}
+#logo, #menu {
+    align-self: end;
 }
 
-.push {
+#eco {
+    height: 5vh;
+    align-self: end;
+}
+.list{
+    width: fit-content;
+    display: contents;
+}
+/* .push {
     margin-left: auto;
 } 
     
 li {
     padding: 2vh 2%;
-}
+} */
 
-a {
-    text-decoration: none;    
-}
-.main-nav a:hover {
+#menu a:hover {
     color: rgb(14, 102, 6);
 }
 
 .navbar {
-    font-size:1.5em;
-    transition: all 0.3s linear;
-    padding-top: 1vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh 60vh;
+    /* font-size:1.5em;
+    transition: all 0.3s linear; */
 }
   
   .dropdown-content {
@@ -98,44 +108,44 @@ a {
   
   .dropdown-content a:hover, .dropdown-content2 p:hover  {background-color: #ddd;}
   
-  .nav:hover .dropdown-content,.nav:hover .dropdown-content2 {
+  #prod:hover .dropdown-content, #cont:hover .dropdown-content2 {
       display: block;
     }
 
     /*BODY*/
 
-.grid-wrapper {
+/*.grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5%;
-}
+} */
 .text{
     color: #0ba42d;
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
-    font-size: 6vh;
-    margin: 0.2em;
+    font-size: 7vh;
+    margin: 1vh;
 }
-.grid-wrapper img{
-    height: 50vh;
+img{
+    height: 60vh;;
 }
-#container {
-    margin-top: 15vh;
-}
+/* #container {
+    margin-top: 10vh;
+} */
 #textbox{
-    border-left: solid 2px lightgray;
-    padding-left: 20px;
+    border-left: solid 3px lightgray;
+    padding-left: 2%;
 }
 #text-wrapper {
-    align-self: center;
+    align-self: end;
 }
 #image-wrapper {
     text-align: end;
 }
 
 @media only screen and (max-width: 650px) {
-    .nav:hover .dropdown-content,.nav:hover .dropdown-content2 {
+    .nav:hover + .dropdown-content,.nav:hover .dropdown-content2 {
         position: relative;
       }
     
