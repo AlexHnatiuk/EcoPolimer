@@ -4,12 +4,11 @@ html {
     width: 100%;
  }
  
- body {
+body {
     margin: 0px;
     min-height: 100%;
     width: 100%;
- }
-
+}
 
 body {
     font-family: 'Oswald', sans-serif;
@@ -22,13 +21,12 @@ body {
 
     /* НАВІГАЦІЯ */
 
-#menu a{
+.list a{
     color: #0ba42d;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2.3vh;
-    padding-left: 6%;
-    padding-bottom: 1.5vh;
+    font-size: 1.2em;
+    padding: 1em 0 1em 1.5em;
     text-decoration: none;
 }
 
@@ -42,24 +40,16 @@ body {
     margin: 0;
 }
 #logo, #menu {
-    align-self: end;
+    align-self: center;
 }
 
 #eco {
-    height: 4vh;
+    height: 2em;
     align-self: end;
 }
 .list{
-    width: fit-content;
     display: contents;
 }
-/* .push {
-    margin-left: auto;
-} 
-    
-li {
-    padding: 2vh 2%;
-} */
 
 #menu a:hover {
     color: rgb(14, 102, 6);
@@ -68,72 +58,60 @@ li {
 .navbar {
     display: grid;
     grid-template-columns: 1fr auto auto 1fr;
-    grid-template-rows: 10vh 10vh;
+    grid-template-rows: 5em 5em;
     grid-column-gap: 5%;
     /* font-size:1.5em;
     transition: all 0.3s linear; */
 }
   
-  .dropdown-content {
+  .dropdown-content, .dropdown-content2 {
+    color: olive;
     display: none;
     position: absolute;
-    margin-top: 1vh;
-    margin-left: -5%;
     background-color: #f1f1f1;
-    min-width: 15%;
+    min-width: 20%;
+    margin-top: 1.5em;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    transition: all 1s ease-in;
   }
 
-  .dropdown-content2 {
-    display: none;
-    position: absolute;
-    right: 0;
-    left: auto;
-    margin-right: 2%;
-    margin-top: 1vh;
-    background-color: #f1f1f1;
-    min-width: 15%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
+.dropdown-content {
+    left: 60%;
+}
   .dropdown-content a, .dropdown-content2 p {
     color: olive;
+    text-transform: unset;
+    font-weight: unset;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     margin: 0;
+    border-bottom: unset;
   }
 
   
-  .dropdown-content a:hover, .dropdown-content2 p:hover  {background-color: #ddd;}
+.dropdown-content a:hover, .dropdown-content2 p:hover  {background-color: #ddd;}
   
-  #prod:hover .dropdown-content, #cont:hover .dropdown-content2 {
-      display: block;
-    }
+#prod:hover .dropdown-content, #cont:hover .dropdown-content2 {
+    display: block;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
 
     /*BODY*/
 
-/*.grid-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5%;
-} */
 .text{
     color: #0ba42d;
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
-    font-size: 7vh;
-    margin: 1vh;
+    font-size: 3.5em;
+    margin: 0;
 }
 img{
-    height: 60vh;;
+    height: 30em;
 }
-/* #container {
-    margin-top: 10vh;
-} */
 #textbox{
     border-left: solid 3px lightgray;
     padding-left: 2%;
@@ -145,31 +123,62 @@ img{
     text-align: end;
 }
 
+@media only screen and (max-width: 1025px) {
+    img {
+        height: 25em;
+    }
+    .text {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    img {
+        height: 20em;
+    }
+    .text {
+        font-size: 2.5em;
+    }
+    #menu a {
+        font-size: 1em;
+    }
+}
+
 @media only screen and (max-width: 650px) {
-    .nav:hover + .dropdown-content,.nav:hover .dropdown-content2 {
+    #prod:hover .dropdown-content, #cont:hover .dropdown-content2 {
         position: relative;
       }
-    
-    #eco{
-        height: 3vh;
-    }
-    .main-nav {
+    .navbar{
         display: block;
-        padding: 0;
+    }
+    #logo {
+        padding-top: 2.5em;
+        padding-bottom: 1em;
+    }
+    .dropdown-content, .dropdown-content2 {
+        left: unset;
+        position: relative;
+        margin-top: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 1em;
+    }
+    
+    #menu {
+        display: grid;
+        justify-content: unset;
+    }
+    a {
+        padding: 0.5em;
+        margin: 0 10%;
+        border-bottom: solid 2px darkgray;
     }
     #image-wrapper {
         text-align: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
-    .grid-wrapper img {
-        width: 100%;
-        height: auto;
-    }
-    .main-nav li {
-        border-bottom: 1px solid rgb(179, 179, 187);
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-   
+
     #container {
         margin-top: 50px;
     }
@@ -179,16 +188,7 @@ img{
         justify-content: center;
     }
     .text {
-        font-size: 3.5vh;
+        font-size: 2em;
         text-align: center;
-    }
-  
-}
-@media only screen and (max-width: 400px) {
-    .grid-wrapper {
-        grid-template-columns: 200px;
-    }
-    .text {
-        font-size: 3vh;
     }
 }
