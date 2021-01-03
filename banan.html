@@ -3,24 +3,41 @@
     <head>
         <meta charset="utf-8">
         <title>Пакет "Банан"</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style-banan.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     </head>
     <body>
 
-    <!-- Навігація -->       
+    <!-- NAVBAR -->       
 
-    <nav class="navbar">
-        <ul class="main-nav">
-            <li>
-                <img id="eco" src="img/eco.png" alt="EcoPolimer">
-                <p>пакети серійні та з логотипом</p>
-            </li>
-            <li class="push"><a href="index.html">Головна</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>                
-            <li><a href="#cont">Контакти</a></li>
-        </ul>
-    </nav> 
+    <div class="navbar">
+        <div id="logo"><a href="index.html"><img id="eco" src="img/logo.png" alt="логотип"></a></div>
+        <div id="menu">
+            <div class="list" id="prod">
+                <a>продукція</a>
+                <div class="dropdown-content">
+                    <a class="paket" href="banan.html">Пакет "Банан"</a>
+                    <a class="paket" href="maika.html">Пакет "Майка"</a>
+                    <a class="paket" href="bio.html">Пакет "Біо"</a>
+                </div>
+            </div>
+            <div class="list">
+                <a href="price.html">прайс-лист</a>
+            </div>
+            <div class="list" id="cont">
+                <a>контакти</a>
+                <div class="dropdown-content2">
+                    <p>тел: 098 092 36 88</p>
+                    <p>ecopolimera@gmail.com</p>
+                    <p>Адреса: м. Гайсин Вінницька обл.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BODY --> 
 
         <div id="page-container">
            
@@ -44,9 +61,9 @@
         <h2>Види пакетів банан</h2>
 
         <div id="vydy">
-            <img src="img/banan.png" alt="Фото пакета"><!--
-            --><img src="img/Paket_M.png" alt="Фото пакета"><!--
-            --><img src="img/Paket_MS.png" alt="Фото пакета">
+            <img src="img/banan.png" alt="Фото пакета">
+            <img src="img/Paket_M.png" alt="Фото пакета">
+            <img src="img/Paket_MS.png" alt="Фото пакета">
         </div>
         
         <div id="description">
@@ -96,7 +113,7 @@
             <li>товщина поліетиленової плівки;</li>
             <li>розмір: (ширина бічної складки в розвороті) х (висота пакета з ручками);</li>
             <li>кількість квітів друку;</li>
-            <li>тіраж партії.</li>
+            <li>тираж партії.</li>
         </ul>
 
         <h3>Стандартні розміри пакетів Банан</h3>
@@ -126,15 +143,6 @@
             наших клієнтів. Довіряйте професіоналам!
         </p>
         </div>
-
-        <footer class="footer">
-            <h3 id="cont">Контакти:</h3>   
-            <ul class="contacty">
-                <li>м. Гайсин, Вінницька обл.</li>
-                <li>тел: 098 092 36 88</li>
-                <li>e-mail: ecopolimera@gmail.com</li>
-            </ul>     
-        </footer>
 
     </body>
 </html> 

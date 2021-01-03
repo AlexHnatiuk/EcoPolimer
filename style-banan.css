@@ -1,60 +1,102 @@
 body {
-    margin: 0;
+    margin: 0 15% 2em 15%;
     background-image: url(../images/elips1.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 500px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
     font-style: normal;
     font-weight: 100;      
 }
 
    /* НАВІГАЦІЯ */
 
-.main-nav {
-    display: flex;
-    list-style: none;
-    font-size: 0.7em;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
+.list > a {
+    color: #0ba42d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 1em 0 1em 1.5em;
+    text-decoration: none;
 }
-    
+
+#menu {
+    justify-content: flex-end;
+    display: inline-flex;
+}
+
+#logo {
+    text-align: left;
+}
+
+#logo, #menu {
+    align-self: center;
+}
+
 #eco {
-    width: 200px;
+    height: 2em;
 }
-    
-.push {
-    margin-left: auto;
-}
-    
-li {
-    padding: 10px 30px;
+.list{
+    display: contents;
 }
 
-li p {
-    margin: 0;
-    color: gray;
-    font-size: 0.7em;
-    text-align: center;
-}
-    
-a {
-    color: gray;
-    text-decoration: none;    
+#menu a:hover {
+    color: rgb(14, 102, 6);
 }
 
-.main-nav a:hover {
-    color: blue;
-}
-    
 .navbar {
-    font-size:2em;
-    transition: all 0.3s linear;
-    background-color: white;
-    text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 5em;
+    grid-column-gap: 5%;
+}
+  .dropdown-content, .dropdown-content2 {
+    color: olive;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 20%;
+    margin-top: 3.5em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all 1s ease-in;
+  }
+
+.dropdown-content {
+    left: 50%;
+}
+  .dropdown-content a, .dropdown-content2 p {
+    color: olive;
+    text-transform: unset;
+    font-weight: unset;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    border-bottom: unset;
+  }
+
+.dropdown-content a:hover, .dropdown-content2 p:hover {
+    background-color: #ddd;
+}
+  
+#prod:hover .dropdown-content, #cont:hover .dropdown-content2 {
+    display: block;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
 }
 
+.paket {
+    font-size: 1.3em;
+}
+
+/* OLD STYLE */
+#page-container {
+    margin-bottom: 3em;
+}
 #description {    
     background-image: url(../images/elips2.png);
     background-repeat: no-repeat;
@@ -67,7 +109,7 @@ h2, h1 {
     font-size: 2em;
     color: #12a714;
     text-align: center;
-    margin: 60px
+    margin: 1.5em 0;
 }
 
 h3 {
@@ -77,31 +119,27 @@ h3 {
 }
 
 p {
-    font-size: 14pt;
+    font-size: 1.3em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
-
-#page-container {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 100px; 
+#vydy {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-
 #vydy img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
 }
 
 #grid-container {
-    display: inline-grid;
+    display: grid;
     position: relative;
-    grid-template-columns: 150px 150px 150px;    
-    margin-left: -225px;
-    left: 50%;    
+    grid-template-columns: auto auto auto;       
 }
-
+li {
+    text-align: left;
+}
 .grid-item {
     position: relative;
     text-align: center;
@@ -110,8 +148,8 @@ p {
 
 #vartist {
     text-align: center;
-    font-size: 10pt;
-    margin-bottom: 50px;
+    font-size: 1em;
+    margin-bottom: 2em;
 }
 
 .button {
@@ -144,16 +182,6 @@ button:hover {
     height: 60px;
 }
 
-/* #last {
-    font-size: 2.2em;
-    text-align: center;
-    color: #335264;
-    margin-bottom: 1rem;
-    font-weight: 400;
-} */
-
-/* FOOTER */
-
 .contacty {
     display: contents;
     list-style: none;
@@ -164,70 +192,59 @@ button:hover {
     padding: 5px;
     color: honeydew;
 }
+/* RESPONSIVE */
 
-footer {
-    width: 100%;
-    height: 500px;
-    background-image: url(img/city2.jpg);
-    background-size: 100% 100%;
-    text-align: center;
-}
-
-footer h3 {
-    padding-top: 360px;
-    color: honeydew;
-    margin-bottom: 5px;
-    margin-bottom: 5px;
-    font-weight: 400;
-}
-
-@media only screen and (max-width: 1285px) {
-    footer {
-        background-size: cover;
+@media only screen and (max-width: 970px) {
+    .list > a {
+        font-size: 1em;
     }
 }
 
-
-@media only screen and (max-width: 1050px) {
-    li {
-        padding: 10px 25px;
+@media only screen and (max-width: 840px) {
+    .list > a {
+        font-size: 0.8em;
+    }
+    #eco {
+        height: 1.5em;
+    }
+    .dropdown-content, .dropdown-content2{
+        margin-top: 2.5em;
     }
 }
 
-@media only screen and (max-width: 1010px) {
-    .main-nav {
-        font-size: 0.7em;
-    }
-    li {
-        padding: 10px 20px;
-    }
-    .main-nav a {
-        font-size: 0.9em;
-    }      
-}
-
-@media only screen and (max-width: 795px) {
-    .main-nav {
-        font-size: 0.6em;
-        padding: 0;
-    }
-    li {
-        padding: 10px 10px;
-    }
-    #eco{
-        width: 150px;
-    }
-    #logo p {
-        font-size: 0.65em;
-    }
-} 
-    
-
-@media only screen and (max-width: 600px) {
-    .main-nav {
+@media only screen and (max-width: 650px) {
+    #prod:hover .dropdown-content, #cont:hover .dropdown-content2 {
+        position: relative;
+      }
+    .navbar{
         display: block;
     }
-    .main-nav li {
-        border-bottom: 1px solid rgb(179, 179, 187);
+    #logo {
+        padding-top: 2.5em;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+    .dropdown-content, .dropdown-content2 {
+        left: unset;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    .list > a {
+        padding: 1em 0 1em 0;
+        border-bottom: solid 2px darkgray;
+    }
+    .list a {
+        font-size: 1em;
+    }
+    #menu {
+        display: grid;
+        justify-content: unset;
+    }
+    .dropdown-content2 p {
+        text-align: center;
+    }
+    #vydy {
+        grid-template-columns: 1fr;
     }
 }
